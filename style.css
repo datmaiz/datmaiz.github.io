@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/efb4855d-e702-43e5-9997-bba0154152e0/d9d1144a-d86f-449b-b110-641145dee09d/VN-vi-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    /* filter: brightness(50%); */
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-bottom: 10px solid #232323;
+}
+
+.header {
+    width: 70%;
+}
+
+.header-top {
+    display: flex;
+    padding: 20px 0;
+    padding-bottom: 150px;
+}
+
+.header-top-left img {
+    width: 20%;
+    height: 100%;
+}
+
+.header-top-right {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+}
+
+.header-top-right button {
+    background-color: red;
+    width: 100px;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid red;
+    font-weight: bold;
+    height: 70%;
+    cursor: pointer;
+}
+
+.header-top-right select {
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    height: 70%;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.header-content h1, .header-content div {
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 45px;
+}
+
+.header-content div {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form {
+    display: flex;
+    gap: 0 10px;
+}
+
+.form input {
+    padding: 15px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, .5);
+    width: 350px;
+    caret-color: #eee;
+    color: #eee;
+    transition: .25s linear;
+    font-size: 16px;
+}
+
+.form div {
+    position: relative;
+    padding: 0;
+}
+
+.input span {
+    font-size: 14px;
+    color: #eee;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .25s linear;
+}
+
+.form .input input:focus + span {
+    font-size: 10px;
+    top: 10px;
+    color: #ccc;
+}
+
+.form button {
+    padding: 10px 30px 10px 10px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid red;
+    cursor: pointer;
+    font-size: 20px;
+}   
+
+main {
+    background-color: #000;
+}
+
+.info__item {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #232323;
+    padding: 20px 150px;
+}
+
+.info__item:nth-child(2n) {
+    flex-direction: row-reverse;
+} 
+
+.info__item h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.info__item p {
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #000;
+    padding: 20px 150px;
+    gap: 10px 0;
+    padding-bottom: 50px;
+    border-bottom: 10px solid #4e4e4e;
+}
+
+section h1 {
+    font-size: 40px;
+}
+
+.question__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+    transition: background-color .15s linear;
+}
+
+.question__item:hover {
+    background-color: #4e4e4e;
+}
+
+.question__item i {
+    font-size: 25px;
+}
+
+.question__item span {
+    font-size: 20px;
+}
+
+.section-already {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px 0;
+    margin-top: 20px;
+}
+
+.section-form input {
+    background-color: #1c2432;
+    border: 1px solid #258059;
+}
+
+.section-already p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #000;
+    padding: 50px 150px;
+}
+
+footer a, footer p {
+    color: #a6acad;
+}
+
+.footer__question-title {
+    padding: 10px 0 30px 0;
+}
+
+.footer__question-items ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 0;
+}
+
+.footer__question-items ul li {
+    font-size: 14px;
+}
+
+.footer__language {
+    padding: 20px 0;
+}
+
+.footer__language select {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    border-radius: 5px;
+}
+
+footer p {
+    font-size: 13px;
+}
