@@ -54,6 +54,11 @@ header {
     cursor: pointer;
 }
 
+.header-top-right button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .header-top-right select {
     padding: 0 20px;
     color: #fff;

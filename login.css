@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/efb4855d-e702-43e5-9997-bba0154152e0/d9d1144a-d86f-449b-b110-641145dee09d/VN-vi-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  height: 100vh;
+}
+
+.header__logo img {
+    width: 15%;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.header__form {
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 5px;
+    height: 80vh;
+}
+
+.header__form-content {
+    padding: 60px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+.header__form-input {
+    position: relative;
+}
+
+.header__form-input input {
+    padding: 20px 15px 10px 15px;
+    background-color: #333333;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    caret-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.header__form-input .placeholder {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #837d80;
+    transition: .15s linear;
+    user-select: none;
+}
+
+.header__form-input input:focus + .placeholder {
+    font-size: 10px;
+    top: 10px;
+}
+
+.header__form-content button {
+    padding: 15px;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .25s linear;
+}
+
+.header__form-content button:hover {
+    box-shadow: 5px 10px 10px 0 rgba(255, 0, 0, 0.426);
+}
+
+.header__form-note {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header__form-note .help a {
+    color: #837d80;
+    font-size: 12px;
+}
+
+.header__form-note span label {
+    color: #837d80;
+    user-select: none;
+    font-size: 12px;
+}
+
+.header__form-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header__signup {
+    color: #837d80;
+    font-size: 14px;
+}
+
+.header__signup a {
+    color: #fff;
+}
+
+.header__form-footer p {
+    color: #837d80;
+    font-size: 12px;
+}
+
+.header__form-footer p a {
+    color: #0054ad;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #000;
+    padding: 50px 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+footer div {
+    color: #6d6d6e;
+    font-size: 16px;
+}
+
+footer div a {
+    color: #6d6d6e;
+    cursor: pointer;
+}
+
+.footer__question-items ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 0;
+    list-style: none;
+}
+
+.footer__question-items ul li a {
+    font-size: 12px;
+}
+
+.footer__language select {
+    width: 120px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
