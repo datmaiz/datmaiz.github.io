@@ -59,6 +59,7 @@ header {
     color: #837d80;
     transition: .15s linear;
     user-select: none;
+    pointer-events: none;
 }
 
 .header__form-input input:focus + .placeholder {

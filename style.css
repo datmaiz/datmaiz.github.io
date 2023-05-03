@@ -122,6 +122,8 @@ header {
     top: 50%;
     transform: translateY(-50%);
     transition: .25s linear;
+    user-select: none;
+    pointer-events: none;
 }
 
 .form .input input:focus + span {
@@ -140,7 +142,7 @@ header {
     outline: none;
     border: 1px solid red;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
 }   
 
 main {
